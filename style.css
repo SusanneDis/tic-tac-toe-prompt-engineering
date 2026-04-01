@@ -1,0 +1,108 @@
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #fec000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+#container {
+  margin-top: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.5rem;
+  border: none;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Reset-Button */
+#reset-btn {
+  margin-top: 32px;
+  padding: 16px 36px;
+  font-size: 1.2rem;
+  background: #fec000;
+  color: #323232;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.1s;
+}
+
+#reset-btn:active {
+  transform: scale(0.93);
+}
+
+/* Gewinnlinie (SVG) */
+#win-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (max-width: 390px) {
+  table {
+    margin: 0 16px; /* Abstand links & rechts */
+  }
+
+  td {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #reset-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  body {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+}
+
+
